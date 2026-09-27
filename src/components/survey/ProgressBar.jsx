@@ -20,7 +20,7 @@ export default function ProgressBar({ current, total }) {
         aria-label="Progreso de la encuesta"
       >
         <motion.div
-          className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-brand-500 via-brand-400 to-[#E879A9]"
+          className="absolute inset-y-0 left-0 rounded-full bg-gradient-to-r from-brand-500 via-brand-400 to-[#60A5FA]"
           initial={false}
           animate={{ width: `${pct}%` }}
           transition={{ type: 'spring', stiffness: 120, damping: 22 }}

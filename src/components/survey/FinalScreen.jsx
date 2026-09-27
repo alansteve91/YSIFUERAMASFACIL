@@ -59,7 +59,22 @@ export default function FinalScreen({ onFinish }) {
         <span className="font-serif text-[19px] italic text-brand-700 sm:text-[20px]">solución real</span>.
       </motion.p>
 
-      <motion.ul {...rise(0.95)} className="relative z-10 mt-9 flex flex-wrap justify-center gap-2.5">
+      {/* Firma personal */}
+      <motion.div {...rise(0.9)} className="relative z-10 mt-8 flex flex-col items-center">
+        <p className="text-[14px] italic text-ink-mute">Gracias por compartir tu experiencia.</p>
+        <motion.span
+          aria-hidden
+          className="mt-4 block h-px w-28 bg-gradient-to-r from-transparent via-brand-300 to-transparent"
+          initial={{ scaleX: 0, opacity: 0 }}
+          animate={{ scaleX: 1, opacity: 1 }}
+          transition={{ duration: 0.9, delay: 1.05, ease }}
+        />
+        <p className="mt-2 font-script text-[30px] font-medium leading-none tracking-[0.01em] text-brand-800 sm:text-[34px]">
+          Alan Steve
+        </p>
+      </motion.div>
+
+      <motion.ul {...rise(1.1)} className="relative z-10 mt-8 flex flex-wrap justify-center gap-2.5">
         <li className="chip py-2 pl-2 pr-3.5">
           <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
             <Check className="h-3.5 w-3.5" strokeWidth={2.6} />
@@ -74,7 +89,7 @@ export default function FinalScreen({ onFinish }) {
         </li>
       </motion.ul>
 
-      <motion.div {...rise(1.1)} className="relative z-10 mt-11">
+      <motion.div {...rise(1.25)} className="relative z-10 mt-10">
         <button type="button" onClick={onFinish} className="btn-primary px-10">
           <span>Finalizar</span>
         </button>

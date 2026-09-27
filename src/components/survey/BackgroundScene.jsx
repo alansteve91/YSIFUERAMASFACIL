@@ -28,7 +28,7 @@ export default function BackgroundScene({ variant = 'survey', particles = true }
 
   return (
     <div aria-hidden className="pointer-events-none fixed inset-0 -z-10 overflow-hidden noise">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#FFFFFF_0%,#F7F7FB_55%,#F1F0F8_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,#FFFFFF_0%,#F8FAFC_55%,#F1F5F9_100%)]" />
       <div className="grid-fade absolute inset-0 opacity-70" />
 
       <div
@@ -50,7 +50,7 @@ export default function BackgroundScene({ variant = 'survey', particles = true }
         dots.map((d, i) => (
           <span
             key={i}
-            className="absolute bottom-[-10px] rounded-full bg-white shadow-[0_0_12px_rgba(138,125,251,.6)] animate-drift"
+            className="absolute bottom-[-10px] rounded-full bg-white shadow-[0_0_12px_rgba(59,130,246,.6)] animate-drift"
             style={{
               left: d.left,
               width: d.size,

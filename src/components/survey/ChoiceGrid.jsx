@@ -40,7 +40,7 @@ export default function ChoiceGrid({ question, value, onChange, multiple }) {
             whileTap={{ scale: 0.97 }}
             className={`group relative flex min-h-[92px] flex-col items-start justify-between gap-3 rounded-2xl border p-3.5 text-left transition-all duration-300 sm:min-h-[104px] sm:p-4 ${
               isOn
-                ? 'border-brand-400 bg-white shadow-[0_0_0_4px_rgba(109,93,245,.12),0_12px_28px_-12px_rgba(91,71,232,.45)]'
+                ? 'border-brand-400 bg-white shadow-[0_0_0_4px_rgba(37,99,235,.12),0_12px_28px_-12px_rgba(29,78,216,.45)]'
                 : 'border-ink/[.07] bg-white/65 backdrop-blur hover:-translate-y-0.5 hover:border-ink/15 hover:bg-white hover:shadow-soft'
             }`}
           >

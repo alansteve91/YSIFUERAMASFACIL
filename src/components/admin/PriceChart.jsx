@@ -19,13 +19,13 @@ export default function PriceChart({ data, topKey }) {
     <div className="h-[240px] w-full">
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={rows} margin={{ top: 8, right: 4, left: -26, bottom: 0 }} barCategoryGap="18%">
-          <CartesianGrid vertical={false} stroke="rgba(14,14,26,.06)" />
-          <XAxis dataKey="short" tickLine={false} axisLine={false} tick={{ fontSize: 10, fill: '#A3A3B8' }} interval={0} height={24} />
-          <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={{ fontSize: 11, fill: '#A3A3B8' }} />
-          <Tooltip content={<ChartTooltip unit="personas" />} cursor={{ fill: 'rgba(109,93,245,.06)' }} />
+          <CartesianGrid vertical={false} stroke="rgba(15,23,42,.06)" />
+          <XAxis dataKey="short" tickLine={false} axisLine={false} tick={{ fontSize: 10, fill: '#94A3B8' }} interval={0} height={24} />
+          <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={{ fontSize: 11, fill: '#94A3B8' }} />
+          <Tooltip content={<ChartTooltip unit="personas" />} cursor={{ fill: 'rgba(37,99,235,.06)' }} />
           <Bar dataKey="value" radius={[4, 4, 0, 0]} animationDuration={900}>
             {rows.map((d) => (
-              <Cell key={d.key} fill={d.key === topKey ? '#5B47E8' : d.key === 'depende' ? '#D6D6E0' : '#ABA3FF'} />
+              <Cell key={d.key} fill={d.key === topKey ? '#1D4ED8' : d.key === 'depende' ? '#CBD5E1' : '#93C5FD'} />
             ))}
           </Bar>
         </BarChart>

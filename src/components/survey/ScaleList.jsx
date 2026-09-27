@@ -21,7 +21,7 @@ export default function ScaleList({ question, value, onChange }) {
             whileTap={{ scale: 0.985 }}
             className={`group flex w-full items-center gap-3.5 rounded-2xl border px-4 py-3.5 text-left transition-all duration-300 sm:px-5 ${
               isOn
-                ? 'border-brand-400 bg-white shadow-[0_0_0_4px_rgba(109,93,245,.12)]'
+                ? 'border-brand-400 bg-white shadow-[0_0_0_4px_rgba(37,99,235,.12)]'
                 : 'border-ink/[.07] bg-white/65 backdrop-blur hover:border-ink/15 hover:bg-white hover:shadow-soft'
             }`}
           >

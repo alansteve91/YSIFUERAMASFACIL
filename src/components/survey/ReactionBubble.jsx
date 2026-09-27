@@ -14,7 +14,7 @@ export default function ReactionBubble({ text }) {
     >
       <div className="relative">
         <motion.div
-          className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-brand-300/60 to-[#F3B6D6]/60 blur-2xl"
+          className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-brand-300/60 to-[#BFDBFE]/60 blur-2xl"
           initial={{ scale: 0.6, opacity: 0 }}
           animate={{ scale: 1.2, opacity: 1 }}
           transition={{ duration: 0.8 }}

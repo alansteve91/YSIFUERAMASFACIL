@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
-const COLORS = ['#6D5DF5', '#8A7DFB', '#ABA3FF', '#F9A8D4', '#7DD3FC', '#FDBA74', '#86EFAC']
+const COLORS = ['#2563EB', '#3B82F6', '#93C5FD', '#BFDBFE', '#7DD3FC', '#A5F3FC', '#E0F2FE']
 
 /**
  * Celebración elegante: una sola ráfaga suave de partículas.

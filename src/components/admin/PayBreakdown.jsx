@@ -2,11 +2,11 @@ import { EmptyState } from './ChartCard'
 
 // Del "Sí" (marca intenso) al "No" (gris): un polo de marca y un polo neutro
 const COLORS = {
-  si: '#4B38C8',
-  probablemente_si: '#6D5DF5',
-  depende: '#ABA3FF',
-  probablemente_no: '#C9C9D6',
-  no: '#9E9EB2',
+  si: '#1E40AF',
+  probablemente_si: '#2563EB',
+  depende: '#93C5FD',
+  probablemente_no: '#CBD5E1',
+  no: '#94A3B8',
 }
 
 export default function PayBreakdown({ data }) {

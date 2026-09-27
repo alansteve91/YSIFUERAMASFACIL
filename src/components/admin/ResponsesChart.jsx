@@ -8,28 +8,28 @@ export default function ResponsesChart({ data }) {
         <AreaChart data={data} margin={{ top: 8, right: 8, left: -24, bottom: 0 }}>
           <defs>
             <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#6D5DF5" stopOpacity={0.28} />
-              <stop offset="100%" stopColor="#6D5DF5" stopOpacity={0} />
+              <stop offset="0%" stopColor="#2563EB" stopOpacity={0.28} />
+              <stop offset="100%" stopColor="#2563EB" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid vertical={false} stroke="rgba(14,14,26,.06)" />
+          <CartesianGrid vertical={false} stroke="rgba(15,23,42,.06)" />
           <XAxis
             dataKey="label"
             tickLine={false}
             axisLine={false}
-            tick={{ fontSize: 11, fill: '#A3A3B8' }}
+            tick={{ fontSize: 11, fill: '#94A3B8' }}
             interval="preserveStartEnd"
             minTickGap={18}
           />
-          <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={{ fontSize: 11, fill: '#A3A3B8' }} />
-          <Tooltip content={<ChartTooltip />} cursor={{ stroke: '#ABA3FF', strokeWidth: 1, strokeDasharray: '3 3' }} />
+          <YAxis allowDecimals={false} tickLine={false} axisLine={false} tick={{ fontSize: 11, fill: '#94A3B8' }} />
+          <Tooltip content={<ChartTooltip />} cursor={{ stroke: '#93C5FD', strokeWidth: 1, strokeDasharray: '3 3' }} />
           <Area
             type="monotone"
             dataKey="value"
-            stroke="#6D5DF5"
+            stroke="#2563EB"
             strokeWidth={2}
             fill="url(#area)"
-            activeDot={{ r: 5, stroke: '#fff', strokeWidth: 2, fill: '#6D5DF5' }}
+            activeDot={{ r: 5, stroke: '#fff', strokeWidth: 2, fill: '#2563EB' }}
             animationDuration={900}
           />
         </AreaChart>

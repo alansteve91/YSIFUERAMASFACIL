@@ -14,10 +14,10 @@
     min-height: 100dvh;
   }
   ::selection {
-    background: rgba(109, 93, 245, 0.18);
+    background: rgba(37,99,235, 0.18);
   }
   :focus-visible {
-    outline: 2px solid #6d5df5;
+    outline: 2px solid #2563EB;
     outline-offset: 3px;
     border-radius: 12px;
   }
@@ -34,7 +34,7 @@
 
   /* Texto con gradiente de marca */
   .text-gradient {
-    background: linear-gradient(100deg, #5b47e8 0%, #8a7dfb 45%, #e879a9 100%);
+    background: linear-gradient(100deg, #1D4ED8 0%, #3B82F6 45%, #60A5FA 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -43,7 +43,7 @@
   /* Botón principal */
   .btn-primary {
     @apply relative inline-flex select-none items-center justify-center gap-2 overflow-hidden rounded-full
-      bg-ink px-7 py-4 text-[15px] font-semibold tracking-tight text-white shadow-lift
+      bg-brand-500 px-7 py-4 text-[15px] font-semibold tracking-tight text-white shadow-[0_10px_28px_-10px_rgba(37,99,235,.6)]
       transition-all duration-300 ease-out
       hover:-translate-y-0.5 hover:shadow-glow
       active:translate-y-0 active:scale-[.98]
@@ -53,7 +53,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(100deg, #5b47e8, #8a7dfb 60%, #c084fc);
+    background: #1d4ed8;
     opacity: 0;
     transition: opacity 0.35s ease;
   }
@@ -83,7 +83,7 @@
   .field {
     @apply w-full resize-none rounded-3xl border border-ink/[.08] bg-white/80 px-5 py-4 text-[17px] leading-relaxed text-ink
       shadow-inset outline-none backdrop-blur transition-all duration-300 placeholder:text-ink-faint
-      focus:border-brand-300 focus:bg-white focus:shadow-[0_0_0_6px_rgba(109,93,245,.10)];
+      focus:border-brand-300 focus:bg-white focus:shadow-[0_0_0_6px_rgba(37,99,235,.10)];
   }
 
   .card-admin {
@@ -97,8 +97,8 @@
 
 @layer utilities {
   .grid-fade {
-    background-image: linear-gradient(to right, rgba(14, 14, 26, 0.045) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(14, 14, 26, 0.045) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(15,23,42, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15,23,42, 0.045) 1px, transparent 1px);
     background-size: 56px 56px;
     mask-image: radial-gradient(ellipse at 50% 35%, #000 20%, transparent 72%);
     -webkit-mask-image: radial-gradient(ellipse at 50% 35%, #000 20%, transparent 72%);
@@ -116,7 +116,7 @@
   }
   .scrollbar-thin {
     scrollbar-width: thin;
-    scrollbar-color: rgba(14, 14, 26, 0.15) transparent;
+    scrollbar-color: rgba(15,23,42, 0.15) transparent;
   }
 }
 

@@ -11,7 +11,7 @@ export default function StatCard({ label, value, suffix, sub, icon: Icon, accent
       }`}
     >
       {accent && (
-        <div className="pointer-events-none absolute -right-10 -top-16 h-44 w-44 rounded-full bg-gradient-to-br from-brand-400/70 to-[#E879A9]/50 blur-3xl" />
+        <div className="pointer-events-none absolute -right-10 -top-16 h-44 w-44 rounded-full bg-gradient-to-br from-brand-400/70 to-[#60A5FA]/50 blur-3xl" />
       )}
       <div className="relative flex items-start justify-between gap-3">
         <p className={`text-[11px] font-semibold uppercase tracking-[.14em] ${accent ? 'text-white/60' : 'text-ink-faint'}`}>{label}</p>

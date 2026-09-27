@@ -72,7 +72,7 @@ export default function QuestionView({ survey }) {
           initial={{ opacity: 0, y: 10, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ delay: 0.15, type: 'spring', stiffness: 260, damping: 20 }}
-          className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-[#C06CE0] px-4 py-1.5 text-[13px] font-semibold text-white shadow-glow"
+          className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand-500 to-[#3B82F6] px-4 py-1.5 text-[13px] font-semibold text-white shadow-glow"
         >
           {q.eyebrow}
         </motion.div>
@@ -148,7 +148,7 @@ export default function QuestionView({ survey }) {
       <div className="flex-1 pb-6 pt-6 sm:pt-12">
         {isFinal ? (
           <div className="relative">
-            <div className="absolute -inset-px rounded-[34px] bg-gradient-to-br from-brand-300 via-white to-[#F3B6D6] opacity-80" />
+            <div className="absolute -inset-px rounded-[34px] bg-gradient-to-br from-brand-300 via-white to-[#BFDBFE] opacity-80" />
             <div className="glass-strong relative rounded-[33px] p-6 sm:p-10">{body}</div>
           </div>
         ) : (
